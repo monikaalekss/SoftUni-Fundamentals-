@@ -1,0 +1,35 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class YopInt {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int [] numbers = Arrays.stream(scanner.nextLine().split(" "))
+                .mapToInt(Integer::parseInt)
+                .toArray();
+
+        boolean isBig = false;
+
+        // gledame koi sa chislata na dqsno ot nai golqmoto chislo
+
+        for (int number = 0; number <= numbers.length - 1; number++) {
+            int current = numbers[number];
+            if (number == numbers.length-1){
+                System.out.print(current + " ");
+                break;
+            }
+            for (int i = number + 1; i <= numbers.length-1 ; i++) {
+                int next = numbers[i];
+                if (current > next){
+                    isBig = true;
+                } else {
+                    isBig= false;
+                    break;
+                }
+            } if (isBig){
+                System.out.print(current + " ");
+            }
+        }
+    }
+}
