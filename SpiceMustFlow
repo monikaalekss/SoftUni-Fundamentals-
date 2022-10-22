@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class SpiceMustFlow {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        int nStart = Integer.parseInt(scanner.nextLine());
+
+        int days = 0;
+        int sourceAmount = 0;
+
+
+        while (nStart >= 100 ) {
+            int spices = nStart - 26;
+            sourceAmount += spices;
+            days++;
+            nStart = nStart -  10;
+
+        }
+        System.out.println(days);
+        if (sourceAmount >= 26){
+            sourceAmount -= 26;
+        }
+        System.out.println(sourceAmount);
+    }
+}
