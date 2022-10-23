@@ -1,0 +1,53 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class Nums {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        List<Integer> numbers = Arrays.stream(scanner.nextLine().split(" "))
+                         .map(Integer::parseInt)
+                         .collect(Collectors.toList());
+
+        String command = scanner.nextLine();
+
+        while (!command.equals("Finish")){
+            String [] commandArr = command.split("\\s+");
+            if (command.contains("Add")){
+                int numberToAdd = Integer.parseInt(commandArr[1]);
+                numbers.add(numberToAdd);
+
+            } else if (command.contains("Remove")){
+                int numberToRemove = Integer.parseInt(commandArr[1]);
+                if (numbers.contains(numberToRemove)){
+                    numbers.remove((Integer) numberToRemove);
+                }
+            } else if (command.contains("Replace")){
+                int oldNum = Integer.parseInt(commandArr[1]);
+                int newNum = Integer.parseInt(commandArr[2]);
+                if (numbers.contains(oldNum)){
+                    int oldNumIndex = numbers.indexOf(oldNum);
+                    numbers.remove(oldNumIndex);
+                    numbers.add(oldNumIndex,newNum);
+                }
+            } else if (command.contains("Collapse")){
+                int number = Integer.parseInt(commandArr[1]);
+                for (int i = 0; i <= numbers.size() - 1 ; i++) {
+                    int currentNum = numbers.get(i);
+                    if (currentNum < number){
+                        numbers.remove((Integer) currentNum);
+                    }
+                }
+            } else if (command.equals("Finish")){
+                break;
+            }
+            command = scanner.nextLine();
+        }
+        for (int elements : numbers) {
+            System.out.print(elements + " ");
+        }
+    }
+}
