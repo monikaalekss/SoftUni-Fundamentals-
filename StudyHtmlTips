@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tips and Tricks </title>
+</head>
+<body>
+<h1><b>Tips and Tricks for studying</b></h1>
+<hr>
+ <ol>
+   <li><b>Choose an environment that will help you to focus on your studies</b>
+   <p>What works for your roommate or your best friend, might not work for you.
+     If you do your best work in your dorm room, <p>clear your desk off so that only the
+     things you need for that subject are in your space. </p>
+   <p>I love studying alone in my room without any noises,but <p>
+           there are people who love listening to music while studying.
+       </p>
+   <p><b><yellow>Choose an environment that works for you and if you suddenly need a change of location, go for it!</yellow></b></p>
+   <img src="tips2.jpg"></li>
+     <li><b>Clear your mind</b>
+     <p>Take a few minutes before you start your study session, or between subjects, to close your eyes and clear your mind of everything else.</p>
+         <img src="mind.jpg">
+     </li>
+     <li><b>Take breaks</b>
+     <p> Refusing to take a break while you’re studying is a sure-fire way to feel overloaded and run down during your study session. </p>
+     <p>Take a few minutes to eat something, to check your email or just take a quick shower.</p>
+     <img src="break.jpg"></li>
+     <li><b>Stay hydrated</b>
+     <p> Multiple studies have found that drinking water can improve brain function and help your brain work more rapidly,
+         <p>which in turn will help you stay focused and retain more information.
+         <p>Drinking water will also help you stay refreshed and awake during your study sessions.</p>
+     <img src="hydrated.jpg"></li>
+     <li><b> Create a system for taking notes</b>
+     <p>organize all of your notes in the same way. Not only does it make the information you’re looking for easier to find, but
+         <p>it gives your brain a pattern to follow and a quick way to retrieve information.
+         <p>So set a system of colors, indents, tabs, bullet points–whatever works for you–and organize your notes.</p>
+     <img src="notes.jpg"></li>
+     <li><b> Reward yourself for a solid study session</b>
+     <p>Sometimes finishing a study session can feel like you’ve just finished running a marathon.
+         <p>It’s exhausting, and it can take hours. But if you’ve just finished a solid study session, reward yourself for your hard work!</p>
+     <img src="deserts.jpg"></li>
+     <li><b> Organize your study session before you start</b>
+     <p> Starting a study session can feel like you’re standing at the bottom of Mount Everest. So do what the sherpas do, and make a plan.
+         <p>Start by setting small, reachable (but challenging) goals for yourself and then organize them into a schedule.
+         <p>If you give yourself a schedule to follow, you only have to tackle the first part of that schedule rather than the whole thing.</p>
+     <img src="tips3.jpg"></li>
+ </ol>
+</body>
+</html>
