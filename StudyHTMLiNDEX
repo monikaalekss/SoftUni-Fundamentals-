@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study With Me</title>
+</head>
+<body>
+<header>
+    <p><b>Study with Monika</b></p>
+    <hr>
+    <b>For me:</b>
+    <p>I am Monika Aleksandrova,17 years old girl who loves studying and exploring new things.
+        <p>I have few tips and tricks for all of the students who don't know from where to start and need motivation.</p>
+   <p> I hope i will help you !  </p>
+    <p><b>P.S. </p><p>Be good person and keep smiling!</b></p>
+    <img src="monikaPhoto.jpg">
+        <nav>
+            <ul>
+                <li<b>Tips,motivation and interesting facts:</b></li>
+                <hr>
+                <li><button type="menu">Tips and Tricks</button></li>
+                <li><button type="menu">Motivation</button></li>
+                <li><button type="menu">Interesting facts </button> </li>
+            </ul>
+                </nav>
+    <h1></h1>
+
+
+</header>
+<footer>
+    <h3>You can find me here:</h3>
+    <hr>
+    <ul>
+        <li><button><img src="insta.jpg"></button></li>
+        <li><img src="tiktok.png"></li>
+    </ul>
+</footer>
+
+</body>
+</html>
