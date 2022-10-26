@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class StudentsObjects {
+
+    static class Students {
+        String firstName;
+        String lastName;
+        String age;
+        String hometown;
+
+
+        public Students (String firstName, String lastName,String age,String hometown ){
+         this.firstName = firstName;
+         this.lastName = lastName;
+         this.age = age;
+         this.hometown = hometown;
+    }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public String getAge() {
+            return age;
+        }
+
+        public String getHometown() {
+            return hometown;
+        }
+
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            boolean print = false;
+             String input = scanner.nextLine();
+             List<Students> studentsList = new ArrayList<>();
+           while (!input.equals("end")){
+              String[] students = input.split(" ");
+                   String firstName = students[0];
+                   String lastName = students[1];
+                   String age = students[2];
+                   String hometown = students[3];
+               Students currentStudent = new Students(firstName,lastName,age,hometown);
+               studentsList.add(currentStudent);
+
+
+               input = scanner.nextLine();
+               }
+           String city = scanner.nextLine();
+
+           for(Students item:studentsList){
+               if (city.equals(item.getHometown())){
+                   System.out.printf("%s %s is %s%n" , item.getFirstName(),item.getLastName(),
+                           item.getAge());
+
+               }
+           }
+            }
+
+        }
+    }
